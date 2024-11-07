@@ -20,7 +20,7 @@
 .imagen-logo {
     display: block;
     margin: 30px auto ; /* Centra la imagen horizontalmente */
-    max-width: 600px; /* Ajusta el tamaño de la imagen */
+    max-width: 500px; /* Ajusta el tamaño de la imagen */
 }
 
 /* Estilo del menú */
@@ -39,7 +39,7 @@ li {
 
 li a {
     display: block;
-    color: rgb(12, 12, 12);
+    color: rgb(255, 0, 0);
     text-align: center;
     padding: 14px 120px;
     text-decoration: none;
