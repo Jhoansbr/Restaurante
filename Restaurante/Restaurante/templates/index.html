@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú con Imagen y Carrusel</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Vincula el archivo CSS -->
+</head>
+<body>
+
+    <!-- Imagen antes del menú -->
+    <img src="{% static 'images/logo.png' %}" class="imagen-logo">
+
+    <!-- Menú horizontal -->
+    <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#services">Menu</a></li>
+        <li><a href="#about">Reservas</a></li>
+        <li><a href="#contact">Pedidos</a></li>
+    </ul>
+    
+    <!-- Óvalo con el texto "Acceder" -->
+    <div class="oval">Acceder</div>
+
+    <div class="carrusel-mosaico">
+        <div class="imagenes">
+            <img src="{% static 'images/imagen1.jpg' %}" alt="Imagen 1">
+            <img src="{% static 'images/imagen2.jpg' %}" alt="Imagen 2">
+            <img src="{% static 'images/imagen3.jpg' %}" alt="Imagen 3">
+            <img src="{% static 'images/imagen4.jpg' %}" alt="Imagen 4">
+            <img src="{% static 'images/imagen1.jpg' %}" alt="Imagen 1">
+            <img src="{% static 'images/imagen2.jpg' %}" alt="Imagen 2">
+            <img src="{% static 'images/imagen3.jpg' %}" alt="Imagen 3">
+            <img src="{% static 'images/imagen4.jpg' %}" alt="Imagen 4">
+        </div>
+    </div>
+    <div>
+        <h1>Nosotros</h1>
+    </div>
+    <div class="contenedor">
+        <img src="{% static 'images/ejemplo.jpg' %}" alt="Imagen 5" class="imagen-ejemplo">
+        <p class="texto-al-lado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Dolor dolorem modi dolores quos aperiam, atque, minima corrupti 
+            cupiditate sapiente ad perferendis sunt vitae voluptas recusandae 
+            quas culpa dolorum porro ea.</p>
+    </div>
+    <div style="height: 1000px;"> <!-- Altura para demostrar el scrollbar -->
+    </div>
+    
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

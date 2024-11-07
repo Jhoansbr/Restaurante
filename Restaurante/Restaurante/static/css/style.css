@@ -1,0 +1,137 @@
+/* Estilos para el scrollbar en Chrome y otros navegadores basados en WebKit */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color del track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la parte que se puede mover */
+    border-radius: 6px; /* Bordes redondeados para el scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color del thumb al pasar el ratón */
+}
+
+/* Estilo de la imagen */
+.imagen-logo {
+    display: block;
+    margin: 30px auto ; /* Centra la imagen horizontalmente */
+    max-width: 100px; /* Ajusta el tamaño de la imagen */
+}
+
+/* Estilo del menú */
+ul {
+    list-style-type: none;
+    margin: 40px 0 0 0; /* Ajusta el margen superior del menú */
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+li {
+    display: inline-block; /* Muestra los elementos en línea horizontalmente */
+}
+
+li a {
+    display: block;
+    color: rgb(203, 31, 31);
+    text-align: center;
+    padding: 14px 120px;
+    text-decoration: none;
+    font-family: Arial, sans-serif; /* Cambia la fuente */
+    font-size: 28px; /* Cambia el tamaño de la letra */
+}
+li a:hover {
+    background-color: rgba(173, 173, 173, 0.8); /* Cambia el fondo del enlace al pasar el ratón */
+    color: #fdfdfd; /* Cambia el color del texto si lo deseas */
+}
+
+/* Estilo del óvalo */
+.oval {
+    position: absolute; /* Cambia la posición a absoluta */
+    top: 20px; /* Espacio desde la parte superior */
+    right: 20px; /* Espacio desde la derecha */
+    background-color: #007BFF; /* Color de fondo del óvalo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado dentro del óvalo */
+    border-radius: 25px; /* Hace que los bordes sean redondeados */
+    text-align: center; /* Centra el texto dentro del óvalo */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+/* Efecto hover para el óvalo */
+.oval:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el ratón */
+}
+
+/* Estilo principal del contenedor del carrusel */
+.carrusel-mosaico {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden; /* Oculta las imágenes que se salen del contenedor */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+/* Contenedor de imágenes en fila con animación de desplazamiento */
+.imagenes {
+    display: flex;
+    animation: deslizamiento 30s linear infinite; /* Animación continua y más lenta */
+    width: calc(100%); /* Ancho suficiente para todas las imágenes */
+}
+
+/* Estilo para cada imagen */
+.imagenes img {
+    width: 30%; /* Cada imagen ocupa el 20% del ancho, para que se vean 5 a la vez */
+    object-fit: cover; /* Asegura que la imagen llene su contenedor */
+    height: 100%;
+}
+
+/* Animación de desplazamiento */
+@keyframes deslizamiento {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Desplaza el contenedor completamente para el bucle */
+    }
+}
+body {
+    margin: 0; /* Eliminar márgenes por defecto del body */
+    padding: 0; /* Eliminar padding por defecto del body */
+    font-family: Arial, sans-serif; /* Tipo de fuente para todo el cuerpo */
+}
+
+h1 {
+    text-align: center; /* Centrar el texto */
+    margin-top: 130px;  /* Espacio arriba del h1 */
+    margin-bottom: 10px; /* Espacio abajo del h1 */
+    font-size: 2.5em;   /* Tamaño de la fuente */
+    color: #020202;        /* Color del texto */
+}
+.contenedor {
+    display: flex;               /* Usar flexbox para alinear elementos en fila */
+    align-items: center;         /* Alinear verticalmente al centro */
+    margin: 20px;               /* Espaciado alrededor del contenedor */
+}
+
+.imagen-ejemplo {
+    width: 500px;               /* Ajusta el ancho de la imagen */
+    height: auto;               /* Mantiene la relación de aspecto */
+    border-radius: 10px;        /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    margin-right: 20px;        /* Espacio entre la imagen y el párrafo */
+}
+
+.texto-al-lado {
+    max-width: 500px;   /* Ancho máximo del párrafo */
+    margin-left: 200px; 
+    font-size: 2.5em;
+}
