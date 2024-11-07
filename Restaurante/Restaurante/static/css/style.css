@@ -20,7 +20,7 @@
 .imagen-logo {
     display: block;
     margin: 30px auto ; /* Centra la imagen horizontalmente */
-    max-width: 100px; /* Ajusta el tamaño de la imagen */
+    max-width: 200px; /* Ajusta el tamaño de la imagen */
 }
 
 /* Estilo del menú */
@@ -39,12 +39,12 @@ li {
 
 li a {
     display: block;
-    color: rgb(203, 31, 31);
+    color: rgb(12, 12, 12);
     text-align: center;
     padding: 14px 120px;
     text-decoration: none;
     font-family: Arial, sans-serif; /* Cambia la fuente */
-    font-size: 28px; /* Cambia el tamaño de la letra */
+    font-size: 18px; /* Cambia el tamaño de la letra */
 }
 li a:hover {
     background-color: rgba(173, 173, 173, 0.8); /* Cambia el fondo del enlace al pasar el ratón */
