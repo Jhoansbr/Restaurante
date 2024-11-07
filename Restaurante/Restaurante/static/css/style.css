@@ -20,7 +20,7 @@
 .imagen-logo {
     display: block;
     margin: 30px auto ; /* Centra la imagen horizontalmente */
-    max-width: 200px; /* Ajusta el tamaño de la imagen */
+    max-width: 600px; /* Ajusta el tamaño de la imagen */
 }
 
 /* Estilo del menú */
