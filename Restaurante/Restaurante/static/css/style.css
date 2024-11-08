@@ -20,7 +20,8 @@
 .imagen-logo {
     display: block;
     margin: 30px auto ; /* Centra la imagen horizontalmente */
-    max-width: 500px; /* Ajusta el tamaño de la imagen */
+    max-width: 900px; /* Ajusta el tamaño de la imagen */
+    margin-top: -6px;
 }
 
 /* Estilo del menú */
@@ -135,66 +136,175 @@ h1 {
     margin-left: 200px; 
     font-size: 2.5em;
 }
-
-.nuevo-login-contenedor * {
+/* Reset de márgenes y rellenos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-.nuevo-login-contenedor {
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    background-color: #f2eaba; /* Gris claro */
+}
+
+
+/* Encabezado */
+header {
+    background-color: #1C2833; /* Azul oscuro para un toque elegante */
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #FAFAFA; /* Blanco para el texto */
+}
+
+/* Sección del formulario de login */
+.login-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f4f4f4;
+    flex-grow: 1;
 }
 
-.nuevo-login-contenedor .login-container {
-    background: white;
+.login-form {
+    background-color: #ffffff ; /* Fondo blanco */
     padding: 20px 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
     width: 100%;
-}
-
-.nuevo-login-contenedor .login-form h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
-    color: #333;
+    margin-top: -130px;
+    max-width: 320px;
     text-align: center;
 }
 
-.nuevo-login-contenedor .input-group {
+.login-form h2 {
+    font-size: 22px;
+    color: #1C2833; /* Azul oscuro */
+    margin-bottom: 20px;
+}
+
+.input-group {
     margin-bottom: 15px;
+    text-align: left;
 }
 
-.nuevo-login-contenedor .input-group label {
+.input-group label {
     display: block;
+    color: #1C2833; /* Azul oscuro */
+    font-size: 14px;
     margin-bottom: 5px;
-    color: #555;
 }
 
-.nuevo-login-contenedor .input-group input {
+.input-container {
+    position: relative;
+}
+
+.input-container input {
     width: 100%;
     padding: 8px 10px;
+    padding-right: 30px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.nuevo-login-contenedor button {
-    width: 100%;
-    padding: 10px 15px;
-    border: none;
-    background-color: #5cb85c;
-    color: white;
+.input-container .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 16px;
+    color: #555;
+}
+
+.extras {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #1C2833; /* Azul oscuro */
+}
+
+.signup-link {
+    margin-bottom: 15px;
+}
+
+.signup-link a {
+    color: #2874A6; /* Azul más claro para enlaces */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #1C2833; /* Azul oscuro */
+    background-color: #1C2833;
+    color: #FAFAFA; /* Blanco */
+    font-size: 16px;
+    font-weight: bold;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2874A6; /* Azul más claro */
+    color: #FAFAFA; /* Blanco */
+}
+
+/* Pie de página */
+footer {
+    background-color:#c7c7c7; /* Gris claro */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #1C2833; /* Azul oscuro */
+}
+
+footer .social-icons a {
+    margin: 0 5px;
+    font-size: 18px;
+    color: #1C2833; /* Azul oscuro */
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #2874A6; /* Azul más claro */
+}
+/* Registro*/
+abel {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 
-.nuevo-login-contenedor button:hover {
-    background-color: #4cae4c;
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-section {
+    display: none;
+    margin-top: 20px;
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+     <img src="{% static 'images/logo.png' %}" class="imagen-logo">
+     <label for="rol">ROL</label>
+     <select id="rol" onchange="mostrarFormulario()">
+         <option value="">Seleccione un rol</option>
+         <option value="cliente">Cliente</option>
+         <option value="repartidor">Repartidor</option>
+     </select>
+ 
+     <!-- Formulario para Cliente -->
+     <div id="form-cliente" class="form-section">
+         <h2>Registro Cliente</h2>
+         <form>
+             <label for="nombre-completo">Nombre Completo</label>
+             <input type="text" id="nombre-completo" placeholder="Ingrese su nombre completo"><br>
+             <label for="documento">Documento de Identidad</label>
+             <input type="text" id="documento" placeholder="Ingrese su CI/DNI"><br>
+             <label for="correo">Correo Electrónico</label>
+             <input type="email" id="correo" placeholder="Ingrese email"><br>
+             <label for="telefono">Número de Teléfono</label>
+             <input type="tel" id="telefono" placeholder="Ingrese su teléfono"><br>
+             <label for="direccion">Dirección</label>
+             <input type="text" id="direccion" placeholder="Ingrese su dirección"><br>
+             <label for="usuario">Nombre de Usuario</label>
+             <input type="text" id="usuario" placeholder="Cree un usuario"><br>
+             <label for="contrasena">Contraseña</label>
+             <input type="password" id="contrasena" placeholder="Cree una contraseña"><br>
+             <button type="submit">Registrar Cliente</button>
+         </form>
+     </div>
+ 
+     <!-- Formulario para Repartidor -->
+     <div id="form-repartidor" class="form-section">
+         <h2>Registro Repartidor</h2>
+         <form>
+             <label for="nombre-completo-rep">Nombre Completo</label>
+             <input type="text" id="nombre-completo-rep" placeholder="Ingrese su nombre completo"><br>
+             <label for="documento-rep">Documento de Identidad</label>
+             <input type="text" id="documento-rep" placeholder="Ingrese su CI/DNI"><br>
+             <label for="correo-rep">Correo Electrónico</label>
+             <input type="email" id="correo-rep" placeholder="Ingrese email"><br>
+             <label for="telefono-rep">Número de Teléfono</label>
+             <input type="tel" id="telefono-rep" placeholder="Ingrese su teléfono"><br>
+             <label for="direccion-rep">Dirección</label>
+             <input type="text" id="direccion-rep" placeholder="Ingrese su dirección"><br>
+             <label for="usuario-rep">Nombre de Usuario</label>
+             <input type="text" id="usuario-rep" placeholder="Cree un usuario"><br>
+             <label for="contrasena-rep">Contraseña</label>
+             <input type="password" id="contrasena-rep" placeholder="Cree una contraseña"><br>
+             <label for="vehiculo">Tipo de Vehículo</label>
+             <input type="text" id="vehiculo" placeholder="Ingrese tipo de vehículo"><br>
+             <button type="submit">Registrar Repartidor</button>
+         </form>
+     </div>
+    <footer>
+        <p>Contacto</p>
+        <div class="social-icons">
+            <a href="#">📷</a>
+            <a href="#">📧</a>
+            <a href="#">📞</a>
+        </div>
+    </footer>
+    <script src="{% static 'js/registro.js' %}"></script>
+
+</body>
+</html>
