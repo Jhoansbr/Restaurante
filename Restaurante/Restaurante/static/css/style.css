@@ -150,6 +150,9 @@ body {
     min-height: 100vh;
     justify-content: space-between;
     background-color: #f2eaba; /* Gris claro */
+    overflow-y: auto; /* Permite que el contenido se desplace si se sale de la vista */
+    overflow-x: hidden; /* Evita desplazamiento lateral no deseado */
+
 }
 
 
@@ -279,33 +282,71 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #2874A6; /* Azul más claro */
 }
+/* Contenedor para el label y select alineados horizontalmente */
+.container {
+    display: flex;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+    justify-content: center;
+    position: absolute; /* Cambia a absolute */
+    top: 100px; /* Usa 'top' en lugar de margin-top */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para el label */
 label {
-    display: block;
-    margin-top: 10px;
-    text-align: center;
+    margin: 0;
+    padding: 5px;
     color: #007BFF;
+    font-weight: bold;
 }
 
-input, select, button {
-    margin-top: 5px;
-    padding: 8px;
+/* Estilo para el select */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 200px; /* Limita el tamaño del select */
+}
+
+/* Estilo general del formulario */
+.form-section {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px; /* Limita el tamaño máximo del formulario */
+    margin: 20px auto; /* Centra el formulario debajo del contenedor */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* El formulario está oculto por defecto */
 }
 
+/* Estilo para los inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Espacio entre los campos */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para el botón */
 button {
-    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
     background-color: #007BFF;
-    color: white;
+    color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
     background-color: #0056b3;
-}
-
-.form-section {
-    display: none;
-    margin-top: 20px;
 }
