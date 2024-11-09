@@ -279,10 +279,11 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #2874A6; /* Azul más claro */
 }
-/* Registro*/
-abel {
+label {
     display: block;
     margin-top: 10px;
+    text-align: center;
+    color: #007BFF;
 }
 
 input, select, button {
